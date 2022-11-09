@@ -1,16 +1,17 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-const newMessage = {
-    message: "Hola Mundo"
-}
+export const FirstApp = ({ title, subtitle }) => {
 
-const description = () => "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam optio eaque in sapiente quibusdam quia placeat iste unde harum, aspernatur culpa nesciunt officiis excepturi omnis perferendis quae aperiam. Quibusdam, facilis!"
-
-export const FirstApp = () => {
   return (
     <>
-        <h1>{ newMessage.message }</h1>
-        <p>{ description() }</p>
+        <h1>{ title }</h1>
+        <p>{ subtitle }</p>
     </>
   )
+}
+
+
+FirstApp.propTypes = {
+  title: PropTypes.string.isRequired
 }

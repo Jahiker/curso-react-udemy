@@ -8,7 +8,7 @@ import { FirstApp } from "./FirstApp";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <HelloWorldApp />
-    <FirstApp />
+    {/* <HelloWorldApp /> */}
+    <FirstApp title={"Hola Mundo"} subtitle={"Esto es un subtitulo"} />
   </React.StrictMode>
 );
