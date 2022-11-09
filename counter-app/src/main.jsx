@@ -5,10 +5,10 @@ import "./index.css";
 
 import { HelloWorldApp } from "./HelloWorldApp";
 import { FirstApp } from "./FirstApp";
+import { CounterApp } from "./CounterApp";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* <HelloWorldApp /> */}
-    <FirstApp title={"Hola Mundo"} subtitle={"Esto es un subtitulo"} />
+    <CounterApp value={1} />
   </React.StrictMode>
 );
